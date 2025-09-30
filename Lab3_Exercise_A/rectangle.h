@@ -1,9 +1,9 @@
 /*
 * File Name: rectangle.h
-* Assignment: Lab 1 Exercise B
+* Assignment: Lab 3 Exercise A
 * Lab Section: B01
-* Completed by: Jack Shenfield
-* Submission Date: Sept 23, 2025
+* Completed by: Jack Shenfield & Marley Cheema
+* Submission Date: Sept 30, 2025
 */
 
 #ifndef RECTANGLE_H
@@ -14,7 +14,7 @@
 // declaration of class rectangle, derived from square
 
 
-class rectangle : public square {
+class rectangle : public virtual square {
 private:
     double side_b;
 

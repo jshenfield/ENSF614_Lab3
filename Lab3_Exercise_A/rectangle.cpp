@@ -1,9 +1,9 @@
 /*
 * File Name: rectangle.cpp
-* Assignment: Lab 1 Exercise B
+* Assignment: Lab 3 Exercise A
 * Lab Section: B01
-* Completed by: Jack Shenfield
-* Submission Date: Sept 23, 2025
+* Completed by: Jack Shenfield & Marley Cheema
+* Submission Date: Sept 30, 2025
 */
 
 #include "rectangle.h"
@@ -12,7 +12,7 @@
 #include <cmath>
 using namespace std;
 
-rectangle::rectangle(point& origin, const char* name, double side_a, double side_b_in): square(origin, name, side_a), side_b(side_b_in){
+rectangle::rectangle(point& origin, const char* name, double side_a, double side_b_in): shape(origin, name), square(origin, name, side_a), side_b(side_b_in){
     // using member initializer list
 }
 
@@ -42,7 +42,7 @@ void rectangle::display() const {
     cout << "X-coordinate: "  << fixed << setprecision(2) << get_origin().get_x() << endl;
     cout << "Y-coordinate: "  << fixed << setprecision(2) << get_origin().get_y() << endl;
     cout << "Side a: "        << fixed << setprecision(2) << get_side_a() << endl;
-    cout << "Side b: "        << fixed << setprecision(2) << side_b << endl;
+    cout << "Side b: "        << fixed << setprecision(2) << get_side_b() << endl;
     cout << "Area: "          << fixed << setprecision(2) << area() << endl;
     cout << "Perimeter: "     << fixed << setprecision(2) << perimeter() << endl;
 }

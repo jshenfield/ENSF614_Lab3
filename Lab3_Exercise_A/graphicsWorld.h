@@ -1,9 +1,9 @@
 /*
 * File Name: graphicsWorld.h
-* Assignment: Lab 1 Exercise B
+* Assignment: Lab 3 Exercise A
 * Lab Section: B01
-* Completed by: Jack Shenfield
-* Submission Date: Sept 23, 2025
+* Completed by: Jack Shenfield & Marley Cheema
+* Submission Date: Sept 30, 2025
 */
 
 // declaration of class graphicsWorld
@@ -15,12 +15,14 @@
 #include "shape.h"
 #include "square.h"
 #include "rectangle.h"
+#include "circle.h"
+#include "curvecut.h"
 
 class graphicsWorld {
 
     public:
         void run();
-        // PROMISES: tests all the previously created classes
+        // PROMISES: tests new circle and curvecut classes
 };
 
 #endif

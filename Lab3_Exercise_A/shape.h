@@ -1,9 +1,9 @@
 /*
 * File Name: shape.h
-* Assignment: Lab 1 Exercise B
+* Assignment: Lab 3 Exercise A
 * Lab Section: B01
-* Completed by: Jack Shenfield
-* Submission Date: Sept 23, 2025
+* Completed by: Jack Shenfield & Marley Cheema
+* Submission Date: Sept 30, 2025
 */
 
 // declaration of class shape
@@ -23,7 +23,7 @@ public:
     shape() = delete; // delete default constructor
     shape(point& a, const char* name);
     // PROMISES: constructs a new shape object at point a with a given name of type string
-    ~shape();
+    virtual ~shape();
     // PROMISES: destructor for shape 
 
     void move(double dx, double dy);
@@ -43,8 +43,11 @@ public:
     // PROMISES: copy constructor for shape
     shape& operator=(const shape& other);
     // PROMISES: assignment operator for shape
-    void display();
+    virtual void display() const;
     // PROMISES: displays the shape's name and origin
+
+    virtual double area() const = 0;   // pure virtual
+    virtual double perimeter() const = 0;  // pure virtual
 
 };
 

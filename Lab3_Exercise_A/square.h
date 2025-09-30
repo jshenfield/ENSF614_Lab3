@@ -1,9 +1,9 @@
 /*
 * File Name: square.h
-* Assignment: Lab 1 Exercise B
+* Assignment: Lab 3 Exercise A
 * Lab Section: B01
-* Completed by: Jack Shenfield
-* Submission Date: Sept 23, 2025
+* Completed by: Jack Shenfield & Marley Cheema
+* Submission Date: Sept 30, 2025
 */
 
 
@@ -14,7 +14,7 @@
 
 // declaration of class square, derived from shape
 
-class square : public shape {
+class square : public virtual shape {
 
 private:
     double side_a;

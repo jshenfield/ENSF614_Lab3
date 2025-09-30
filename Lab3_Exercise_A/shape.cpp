@@ -1,9 +1,9 @@
 /*
 * File Name: shape.cpp
-* Assignment: Lab 1 Exercise B
+* Assignment: Lab 3 Exercise A
 * Lab Section: B01
-* Completed by: Jack Shenfield
-* Submission Date: Sept 23, 2025
+* Completed by: Jack Shenfield & Marley Cheema
+* Submission Date: Sept 30, 2025
 */
 
 #include "shape.h"
@@ -74,7 +74,7 @@ shape& shape::operator=(const shape& other){
     return *this;
 }
 
-void shape::display(){
+void shape::display() const{
 
     // printout lines
     cout << "Shape Name: " << shapeName << endl;
