@@ -2,8 +2,8 @@
 * File Name: point.cpp
 * Assignment: Lab 3 Exercise A
 * Lab Section: B01
-* Completed by: Jack Shenfield & Marley Cheema
-* Submission Date: Sept 30, 2025
+* Completed by: Jack Shenfield & Barrett Sapunjis
+* Submission Date: Oct 1, 2025
 */
 
 // implementation of class point
